@@ -1,0 +1,15 @@
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: Start test interp3 test suite:0:parser test suite:1:parse bool true.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: Test interp3 test suite:0:parser test suite:1:parse bool true is successful.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: End test interp3 test suite:0:parser test suite:1:parse bool true.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: Start test interp3 test suite:0:parser test suite:3:parse float.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: Test interp3 test suite:0:parser test suite:3:parse float is successful.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: End test interp3 test suite:0:parser test suite:3:parse float.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: Start test interp3 test suite:1:principle_type test suite:1:empty constraints with type variable.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: Test interp3 test suite:1:principle_type test suite:1:empty constraints with type variable is successful.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: End test interp3 test suite:1:principle_type test suite:1:empty constraints with type variable.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: Start test interp3 test suite:1:principle_type test suite:4:unify TFun (TVar a, TVar b) with TFun (TInt, TBool).
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: Test interp3 test suite:1:principle_type test suite:4:unify TFun (TVar a, TVar b) with TFun (TInt, TBool) is successful.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: End test interp3 test suite:1:principle_type test suite:4:unify TFun (TVar a, TVar b) with TFun (TInt, TBool).
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: Start test interp3 test suite:1:principle_type test suite:5:unification failure TInt vs TBool.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: Test interp3 test suite:1:principle_type test suite:5:unification failure TInt vs TBool is successful.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#02 I: End test interp3 test suite:1:principle_type test suite:5:unification failure TInt vs TBool.

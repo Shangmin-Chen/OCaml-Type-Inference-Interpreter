@@ -1,8 +1,8 @@
-# dune build
+# dune test
 # OCAMLPARAM: unset
 # Shared cache: enabled-except-user-rules
 # Shared cache location: /Users/shangminchen/.cache/dune/db
-# Workspace root: /Users/shangminchen/cs320-spring-2025-private/assigns/interp3
+# Workspace root: /Users/shangminchen/OCaml-Type-Inference-Interpreter
 # Auto-detected concurrency: 8
 # Dune context:
 #  { name = "default"
@@ -13,21 +13,15 @@
 #  ; build_dir = In_build_dir "default"
 #  ; instrument_with = []
 #  }
-$ /Users/shangminchen/.opam/cs320-s25/bin/ocamlc.opt -config > /var/folders/rq/rmrxcvyn1jz45shh1pmqdcph0000gn/T/dune_547d34_output
+$ /Users/shangminchen/.opam/cs320-s25/bin/ocamlc.opt -config > /var/folders/rq/rmrxcvyn1jz45shh1pmqdcph0000gn/T/dune_4b37dc_output
+$ (cd _build/default && /Users/shangminchen/.opam/cs320-s25/bin/ocamldep.opt -modules -impl lib/interp3.ml) > _build/default/lib/.interp3.objs/interp3.impl.d
 $ (cd _build/default && /Users/shangminchen/.opam/cs320-s25/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.interp3.objs/byte -no-alias-deps -opaque -open Interp3__ -o lib/.interp3.objs/byte/interp3.cmo -c -impl lib/interp3.ml)
-> File "lib/interp3.ml", lines 238-251, characters 2-27:
-> 238 | ..match e with
-> 239 |   (* literals *)
-> 240 |   | Unit -> VUnit
-> 241 |   | Bool b -> VBool b
-> 242 |   | Int i -> VInt i
-> ...
-> 248 |   (* lists *)
-> 249 |   (* pairs *)
-> 250 |   (* var annot asserts *)
-> 251 |   | Var x -> Env.find x env
-> Error (warning 8 [partial-match]): this pattern-matching is not exhaustive.
-> Here is an example of a case that is not matched:
-> (Assert _|Bop (_, _, _)|If (_, _, _)|ListMatch _|OptMatch _|PairMatch _|
-> Fun (_, _, _)|App (_, _)|Annot (_, _)|Let _)
-[2]
+$ (cd _build/default && /Users/shangminchen/.opam/cs320-s25/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I test/.test_interp3.eobjs/byte -I /Users/shangminchen/.opam/cs320-s25/lib/ocaml/unix -I /Users/shangminchen/.opam/cs320-s25/lib/ounit2 -I /Users/shangminchen/.opam/cs320-s25/lib/ounit2/advanced -I /Users/shangminchen/.opam/cs320-s25/lib/seq -I /Users/shangminchen/.opam/cs320-s25/lib/stdlib-shims -I lib/.interp3.objs/byte -no-alias-deps -opaque -o test/.test_interp3.eobjs/byte/dune__exe__Test_interp3.cmi -c -intf test/test_interp3.mli)
+$ (cd _build/default && /Users/shangminchen/.opam/cs320-s25/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.test_interp3.eobjs/byte -I test/.test_interp3.eobjs/native -I /Users/shangminchen/.opam/cs320-s25/lib/ocaml/unix -I /Users/shangminchen/.opam/cs320-s25/lib/ounit2 -I /Users/shangminchen/.opam/cs320-s25/lib/ounit2/advanced -I /Users/shangminchen/.opam/cs320-s25/lib/seq -I /Users/shangminchen/.opam/cs320-s25/lib/stdlib-shims -I lib/.interp3.objs/byte -I lib/.interp3.objs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.test_interp3.eobjs/native/dune__exe__Test_interp3.cmx -c -impl test/test_interp3.ml)
+$ (cd _build/default && /Users/shangminchen/.opam/cs320-s25/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.interp3.objs/byte -I lib/.interp3.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Interp3__ -o lib/.interp3.objs/native/interp3.cmx -c -impl lib/interp3.ml)
+$ (cd _build/default && /Users/shangminchen/.opam/cs320-s25/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/interp3.cmxa lib/.interp3.objs/native/interp3__.cmx lib/.interp3.objs/native/interp3__Utils.cmx lib/.interp3.objs/native/interp3__Parser.cmx lib/.interp3.objs/native/interp3__Lexer.cmx lib/.interp3.objs/native/interp3.cmx)
+$ (cd _build/default && /Users/shangminchen/.opam/cs320-s25/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_interp3.exe lib/interp3.cmxa /Users/shangminchen/.opam/cs320-s25/lib/ocaml/unix/unix.cmxa /Users/shangminchen/.opam/cs320-s25/lib/stdlib-shims/stdlib_shims.cmxa /Users/shangminchen/.opam/cs320-s25/lib/ounit2/advanced/oUnitAdvanced.cmxa /Users/shangminchen/.opam/cs320-s25/lib/ounit2/oUnit.cmxa test/.test_interp3.eobjs/native/dune__exe__Test_interp3.cmx)
+$ (cd _build/default/test && ./test_interp3.exe)
+> ............
+> Ran: 12 tests in: 0.11 seconds.
+> OK

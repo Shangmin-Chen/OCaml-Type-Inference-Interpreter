@@ -1,0 +1,21 @@
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Start test interp3 test suite:0:parser test suite:0:parse unit.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Test interp3 test suite:0:parser test suite:0:parse unit is successful.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: End test interp3 test suite:0:parser test suite:0:parse unit.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Start test interp3 test suite:0:parser test suite:2:parse int.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Test interp3 test suite:0:parser test suite:2:parse int is successful.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: End test interp3 test suite:0:parser test suite:2:parse int.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Start test interp3 test suite:1:principle_type test suite:0:unify type variable with TInt.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Test interp3 test suite:1:principle_type test suite:0:unify type variable with TInt is successful.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: End test interp3 test suite:1:principle_type test suite:0:unify type variable with TInt.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Start test interp3 test suite:1:principle_type test suite:2:unify TList (TVar a) with TList TInt.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Test interp3 test suite:1:principle_type test suite:2:unify TList (TVar a) with TList TInt is successful.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: End test interp3 test suite:1:principle_type test suite:2:unify TList (TVar a) with TList TInt.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Start test interp3 test suite:1:principle_type test suite:3:unify TPair (TVar a, TVar b) with TPair (TInt, TBool).
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Test interp3 test suite:1:principle_type test suite:3:unify TPair (TVar a, TVar b) with TPair (TInt, TBool) is successful.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: End test interp3 test suite:1:principle_type test suite:3:unify TPair (TVar a, TVar b) with TPair (TInt, TBool).
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Start test interp3 test suite:1:principle_type test suite:6:complex type with partial unification.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Test interp3 test suite:1:principle_type test suite:6:complex type with partial unification is successful.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: End test interp3 test suite:1:principle_type test suite:6:complex type with partial unification.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Start test interp3 test suite:1:principle_type test suite:7:occurs check failure.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: Test interp3 test suite:1:principle_type test suite:7:occurs check failure is successful.
+2025-05-14T07:03:55+00:00 laptop.tail7c20df.ts.net#01 I: End test interp3 test suite:1:principle_type test suite:7:occurs check failure.
